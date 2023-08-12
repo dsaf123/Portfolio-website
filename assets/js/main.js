@@ -65,7 +65,7 @@ tabs.forEach(tab => {
             tabContent.classList,remove('qualification__active')
         })
 
-        target.classList.add('qualification__aactive')
+        target.classList.add('qualification__active')
 
         tab.forEach(tab => {
             tab.classList.remove('qualification__active')
