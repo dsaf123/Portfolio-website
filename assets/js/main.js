@@ -37,8 +37,8 @@ function toggleSkills() {
     let itemClass = this.parentNode.className
     console.log(itemClass);
     console.log(document.getElementsByClassName(itemClass))
-    console.log(document.getElementsByClassName(itemClass).classList)
-    document.getElementsByClassName(itemClass).classList.add("skills__open");
+    console.log(document.getElementsByClassName(itemClass)[0].classList)
+    document.getElementsByClassName(itemClass)[0].classList.add("skills__open");
     /*
     for (i=0;i < skillsContent.length;i++) {
         if (itemClass != skillsContent[i].className) {
