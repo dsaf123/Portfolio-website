@@ -36,7 +36,12 @@ const skillsContent = document.getElementsByClassName('skills__content'),
 function toggleSkills() {
     let itemClass = this.parentNode.className
     console.log(itemClass);
+
+
     for (i=0;i < skillsContent.length;i++) {
+        if (itemClass != skillsContent[i].className) {
+            break;
+        }
         console.log(skillsContent[i]);
         if ("skills__close" in skillsContent[i].classList){
             skillsContent[i].classList.remove("skills__close");
