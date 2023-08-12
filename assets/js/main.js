@@ -37,7 +37,8 @@ function toggleSkills() {
     let itemClass = this.parentNode.className
     console.log(itemClass);
 
-
+    document.getElementsByClassName(itemClass).classList.add("skills__open");
+    /*
     for (i=0;i < skillsContent.length;i++) {
         if (itemClass != skillsContent[i].className) {
             break;
@@ -52,6 +53,7 @@ function toggleSkills() {
             skillsContent[i].classList.add("skills__close");
         }
     }
+    */
    
 }
 
