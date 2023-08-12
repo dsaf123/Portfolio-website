@@ -748,6 +748,11 @@ img {
 .contact__icon{
   font-size: 2rem;
   color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact__title{
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
