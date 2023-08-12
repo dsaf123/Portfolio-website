@@ -62,8 +62,8 @@ tabs.forEach(tab => {
         const target = document.querySelector(tab.dataset.target)
 
         tabContents.forEach(tabContent => {
-            tabContent.classList,remove('qualification__active')
-        })
+            tabContent.classList.remove('qualification__active')
+        });
 
         target.classList.add('qualification__active')
 
