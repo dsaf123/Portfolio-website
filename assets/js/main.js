@@ -41,7 +41,7 @@ function toggleSkills() {
 
     childToToggle = document.getElementsByClassName(itemClass)[0];
     console.log(childToToggle.classList)
-    if ("skills__open" in childToToggle.classList) {
+    if (childToToggle.classList.contains("skills__open")) {
         console.log("skills open")
         childToToggle.classList.remove("skills__open");
         childToToggle.classList.add("skills__close");
