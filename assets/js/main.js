@@ -37,15 +37,17 @@ function toggleSkills() {
     let itemClass = this.parentNode.className
     console.log(itemClass);
     console.log(document.getElementsByClassName(itemClass))
-    console.log(document.getElementsByClassName(itemClass)[0].classList)
-    if ("skills__open" in document.getElementsByClassName(itemClass)[0].classList) {
+    console.log(childToToggle.classList)
+
+    childToToggle = document.getElementsByClassName(itemClass);
+    if ("skills__open" in childToToggle) {
         console.log("skills open")
-        document.getElementsByClassName(itemClass)[0].classList.remove("skills__open");
-        document.getElementsByClassName(itemClass)[0].classList.add("skills__close");
+        childToToggle.classList.remove("skills__open");
+        childToToggle.classList.add("skills__close");
     } else {
         console.log("no skills open");
-        document.getElementsByClassName(itemClass)[0].classList.remove("skills__close");
-        document.getElementsByClassName(itemClass)[0].classList.add("skills__open");
+        childToToggle.classList.remove("skills__close");
+        childToToggle.classList.add("skills__open");
  
     }
 
