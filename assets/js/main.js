@@ -52,14 +52,7 @@ function toggleSkills() {
             skillsContent[i].classList.add("skills__close");
         }
     }
-    if ("skills__close" in this.parentNode.classList){
-        this.parentNode.classList.remove("skills__close");
-        this.parentNode.classList.add("skills__open");
-
-    } else {
-        this.parentNode.classList.remove("skills__open");
-        this.parentNode.classList.add("skills__close");
-    }
+   
 }
 
 skillsHeader.forEach((el) => {
