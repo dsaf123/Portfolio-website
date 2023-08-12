@@ -35,39 +35,17 @@ const skillsContent = document.getElementsByClassName('skills__content'),
 
 function toggleSkills() {
     let itemClass = this.parentNode.className
-    console.log(itemClass);
-    console.log(document.getElementsByClassName(itemClass))
-    
 
     childToToggle = document.getElementsByClassName(itemClass)[0];
-    console.log(childToToggle.classList)
+
     if (childToToggle.classList.contains("skills__open")) {
-        console.log("skills open")
         childToToggle.classList.remove("skills__open");
         childToToggle.classList.add("skills__close");
     } else {
-        console.log("no skills open");
         childToToggle.classList.remove("skills__close");
         childToToggle.classList.add("skills__open");
  
     }
-
-    /*
-    for (i=0;i < skillsContent.length;i++) {
-        if (itemClass != skillsContent[i].className) {
-            break;
-        }
-        console.log(skillsContent[i]);
-        if ("skills__close" in skillsContent[i].classList){
-            skillsContent[i].classList.remove("skills__close");
-            skillsContent[i].classList.add("skills__open");
-
-        } else {
-            skillsContent[i].classList.remove("skills__open");
-            skillsContent[i].classList.add("skills__close");
-        }
-    }
-    */
    
 }
 
