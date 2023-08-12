@@ -38,7 +38,14 @@ function toggleSkills() {
     console.log(itemClass);
     console.log(document.getElementsByClassName(itemClass))
     console.log(document.getElementsByClassName(itemClass)[0].classList)
-    document.getElementsByClassName(itemClass)[0].classList.add("skills__open");
+    if ("skills__open" in document.getElementsByClassName(itemClass)[0].classList) {
+        document.getElementsByClassName(itemClass)[0].classList.remove("skills__open");
+        document.getElementsByClassName(itemClass)[0].classList.add("skills__close");
+    } else {
+        document.getElementsByClassName(itemClass)[0].classList.add("skills__open");
+        document.getElementsByClassName(itemClass)[0].classList.remove("skills__close");
+    }
+
     /*
     for (i=0;i < skillsContent.length;i++) {
         if (itemClass != skillsContent[i].className) {
