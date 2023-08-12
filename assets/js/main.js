@@ -37,10 +37,11 @@ function toggleSkills() {
     let itemClass = this.parentNode.className
     console.log(itemClass);
     console.log(document.getElementsByClassName(itemClass))
-    console.log(childToToggle.classList)
+    
 
     childToToggle = document.getElementsByClassName(itemClass)[0];
-    if ("skills__open" in childToToggle) {
+    console.log(childToToggle)
+    if ("skills__open" in childToToggle.classList) {
         console.log("skills open")
         childToToggle.classList.remove("skills__open");
         childToToggle.classList.add("skills__close");
