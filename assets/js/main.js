@@ -38,13 +38,13 @@ function toggleSkills() {
     console.log(itemClass);
     for (i=0;i < skillsContent.length;i++) {
         console.log(skillsContent[i]);
-        if ("skills__close" in skillsContent.classList){
-            skillsContent.classList.remove("skills__close");
-            skillsContent.classList.add("skills__open");
+        if ("skills__close" in skillsContent[i].classList){
+            skillsContent[i].classList.remove("skills__close");
+            skillsContent[i].classList.add("skills__open");
 
         } else {
-            skillsContent.classList.remove("skills__open");
-            skillsContent.classList.add("skills__close");
+            skillsContent[i].classList.remove("skills__open");
+            skillsContent[i].classList.add("skills__close");
         }
     }
     if ("skills__close" in this.parentNode.classList){
