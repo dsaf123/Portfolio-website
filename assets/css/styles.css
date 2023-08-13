@@ -850,7 +850,7 @@ img {
   bottom: -20%;
   background-color: var(--first-color);
   opacity: .8;
-  padding: 0 3rem;
+  padding: 0 .3rem;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
